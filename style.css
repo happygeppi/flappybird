@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  --bgc: #227;
+  background-color: var(--bgc);
+  height: 100vh;
+  overflow: hidden;
+}
+
+#bird {
+  --w: 0px;
+  position: absolute;
+  background-color: #fdc300;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  width: var(--w);
+  height: var(--w);
+  z-index: 100;
+}
+
+.pipe {
+  --w: 0px;
+  --h: 0px;
+  position: absolute;
+  width: var(--w);
+  height: 100vh;
+  background-color: green;
+  z-index: 50;
+}
+.pipe-hole {
+  position: absolute;
+  width: var(--w);
+  height: var(--h);
+  background-color: var(--bgc);
+  z-index: 55;
+}
+
+#scoreboard {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: fit-content;
+  height: fit-content;
+  padding: 32px 48px;
+  background-color: #ddd;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 64px;
+  text-align: center;
+  border-radius: 24px;
+  z-index: 101;
+}
