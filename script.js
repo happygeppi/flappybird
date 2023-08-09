@@ -28,7 +28,7 @@ function CreateObjects() {
 
 function CreateBird() {
   const x = innerWidth / 4;
-  const y = innerHeight / 2;
+  const y = innerHeight / 4;
   const r = 16;
   const force = 7;
   bird = new Bird(x, y, r, force);
